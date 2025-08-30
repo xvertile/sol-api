@@ -61,8 +61,8 @@ func main() {
 
 	api.POST("/get-balance", getBalance)
 
-	slog.Info("starting server on :8081")
-	if err := e.Start(":8081"); err != nil && !errors.Is(err, http.ErrServerClosed) {
+	slog.Info("starting server on :8080")
+	if err := e.Start(":8080"); err != nil && !errors.Is(err, http.ErrServerClosed) {
 		slog.Error("failed to start server", "error", err)
 	}
 }
