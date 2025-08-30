@@ -1,6 +1,8 @@
 module sol-api
 
-go 1.24
+go 1.23.0
+
+toolchain go1.24.5
 
 require (
 	github.com/gagliardetto/solana-go v1.13.0
